@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
 use Google\Auth\Credentials\ServiceAccountCredentials;
+use App\Http\Controllers\OfertaController;
+
+Route::get('/ofertas', [OfertaController::class, 'index']);
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,6 +23,8 @@ Route::get('/probar-firebase', function () {
         $rutaCredenciales
     );
 
+
+    
     $token = $credenciales->fetchAuthToken();
     $accessToken = $token['access_token'];
 
