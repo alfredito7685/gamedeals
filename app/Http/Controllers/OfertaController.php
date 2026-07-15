@@ -22,4 +22,6 @@ class OfertaController extends Controller
 
         return view('ofertas', ['ofertas' => $ofertas]);
     }
+
+    
 }

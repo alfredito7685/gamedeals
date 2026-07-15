@@ -11,6 +11,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
 Route::get('/gameDeals', function () {
     return "Bienvenido a GameDeals, la mejor página para encontrar ofertas de videojuegos.";
 });
@@ -23,8 +27,6 @@ Route::get('/probar-firebase', function () {
         $rutaCredenciales
     );
 
-
-    
     $token = $credenciales->fetchAuthToken();
     $accessToken = $token['access_token'];
 
