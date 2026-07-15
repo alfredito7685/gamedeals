@@ -7,12 +7,15 @@
 </head>
 <body>
 
+<!-- Navbar color negro -->
 <div>
-    <h1>Ofertas de GameDeals</h1>
+    
+</nav>
 
+<!-- Contenedor de ofertas -->
     <div class="row">
         @foreach ($ofertas as $oferta)
-            <div>
+            <div class="card" style="width: 18rem;">
                 <div>
                     <img src="{{ $oferta['thumb'] }}" class="card-img-top" alt="{{ $oferta['title'] }}">
                     <div class="card-body">
@@ -21,7 +24,9 @@
                             <span class="text-decoration-line-through text-muted">${{ $oferta['normalPrice'] }}</span>
                             <strong class="text-success"> ${{ $oferta['salePrice'] }}</strong>
                         </p>
-                        <p-{{ round($oferta['savings']) }}%</p>
+                        <p class="card-text">
+                            <span class="badge bg-danger">Ahorro: {{ round($oferta['savings']) }}%</span>
+                        </p>
                     </div>
                 </div>
             </div>
