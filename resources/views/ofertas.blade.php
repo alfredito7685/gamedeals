@@ -21,11 +21,17 @@
                     <a class="nav-link active" aria-current="page" href="#">inicio</a>
                 </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                            <span class="me-3" style="color: GREEN;">{{ session('usuario_email') }}</span>
+                            <form method="POST" action="/logout" style="display:inline;">
+                                @csrf
+                                <button class="btn btn-outline-danger btn-sm">Cerrar sesión</button>
+                            </form>
                     </li>
                 <li class="nav-item dropdown">
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                        </li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -42,7 +48,7 @@
     </nav>
 </nav>
 
-<!-- Contenedor de ofertas -->
+<!-- ofertas -->
     <div class="row">
         @foreach ($ofertas as $oferta)
             <div class="card" style="width: 18rem;">
