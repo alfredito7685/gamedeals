@@ -2,10 +2,9 @@
 
 ### 1. Clonar el repositorio
 
-\`\`\`bash
-git clone https://github.com/alfredito7685/gamedeals.git<br>
-cd gamedeals
-\`\`\`
+- git clone https://github.com/alfredito7685/gamedeals.git<br>
+- cd gamedeals
+
 
 ### 2. Instalar las dependencias de PHP
 
