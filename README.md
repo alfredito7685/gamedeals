@@ -25,7 +25,7 @@ Genera la clave de la aplicación:
 
 Este proyecto usa Firebase Firestore como base de datos. Para que funcione:
 
-1. Solicita al equipo el archivo `firebase_credentials.json` (no se incluye en este repositorio por seguridad).
+1. Solicita a nuestros colaboradores el archivo `firebase_credentials.json`, no lo incluimos por seguridad.
    
 2. Colócalo en la ruta:
   - storage/app/firebase_credentials.json
