@@ -3,7 +3,7 @@
 ### 1. Clonar el repositorio
 
 \`\`\`bash
-git clone https://github.com/alfredito7685/gamedeals.git
+git clone https://github.com/alfredito7685/gamedeals.git<br>
 cd gamedeals
 \`\`\`
 
